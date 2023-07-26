@@ -399,40 +399,49 @@ header .social-media a {
     border: 1px solid #efefef;
     border-radius: 50%;
 }
-.newsletter{
+
+.newsletter {
     height: 491px;
     background-color: #efefef;
     padding: 90px 0 90px 0;
 }
-.newsletter .container{
+
+.newsletter .container {
     width: 1108px;
     height: 311px;
     background-color: #1b2026;
-    margin: 0 auto;   
-    display: flex; 
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
-.newsletter .text-content{
+
+.newsletter .text-content {
     width: 46%;
 }
-.newsletter .text-content h4{
+
+.newsletter .text-content h4 {
     color: #ff8484;
     font-size: 1.1rem;
     line-height: 1.5;
     font-weight: bold;
     margin-bottom: 8px;
 }
-.newsletter .text-content h3{
+
+.newsletter .text-content h3 {
     color: #ffffff;
     font-weight: bold;
     font-size: 3.1rem;
     line-height: 1.1;
 }
 
-.newsletter .form-content input[type=text]{
-    margin: 0 5px ;
+.newsletter .form-content input {
+    font-family: "DM Sans", sans-serif;
+}
+
+.newsletter .form-content input[type=text] {
+    margin: 0 5px;
     padding: 1rem 1.5rem;
     border-radius: 4px;
     background-color: #31363b;
@@ -443,8 +452,9 @@ header .social-media a {
     width: 324px;
     height: 55px;
 }
-.newsletter .form-content input[type=submit]{
-    margin: 0 5px ;
+
+.newsletter .form-content input[type=submit] {
+    margin: 0 5px;
     background-color: #ff8484;
     border-color: #ff8484;
     color: #ffffff;
@@ -455,13 +465,117 @@ header .social-media a {
     border-radius: 4px;
     font-weight: 600;
 }
-.newsletter .form-content input[type=submit]:hover{
+
+.newsletter .form-content input[type=submit]:hover {
     cursor: pointer;
     color: #ffffff;
     background-color: #ff2d2d;
     border-color: #ff2d2d;
     transition: 0.5s;
 }
+
+.fun-fact {
+    height: 665px;
+    background-color: #ffffff;
+    padding: 112px 0 80px 0;
+}
+
+.fun-fact .container {
+    width: 1140px;
+    /* height: 473px; */
+    /* background-color: #1b2026; */
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.fun-fact .container img {
+    display: block;
+    width: 484px;
+    height: 473px;
+    border-radius: 10px;
+    margin-right: 87px;
+    margin-left: 15px;
+}
+
+.fun-fact .text-content h3 {
+    color: #777777;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.fun-fact .text-content h2 {
+    font-size: 3.8rem;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.fun-fact .text-content p {
+    color: #777777;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.fun-fact .symbols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+}
+
+.fun-fact .symbols i {
+    background: #efefef;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fun-fact .symbols .symbol-up,
+.fun-fact .symbols .symbol-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.fun-fact .symbol-up strong,
+.fun-fact .symbol-down strong {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.fun-fact .symbol-up p,
+.fun-fact .symbol-down p {
+    color: #777777;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0rem;
+}
+
+.fun-fact .symbol-up div,
+.fun-fact .symbol-down div {
+    padding-left: 1.5rem;
+}
+
+.fun-fact .symbols .fa-arrow-up {
+    color: #8bd176;
+    font-size: 1.8rem;
+}
+
+.fun-fact .symbols .fa-arrow-down {
+    color: #ff6666;
+    font-size: 1.8rem;
+}
+
 .test {
     background-color: red;
     width: 100%;
