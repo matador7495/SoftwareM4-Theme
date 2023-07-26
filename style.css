@@ -399,7 +399,69 @@ header .social-media a {
     border: 1px solid #efefef;
     border-radius: 50%;
 }
+.newsletter{
+    height: 491px;
+    background-color: #efefef;
+    padding: 90px 0 90px 0;
+}
+.newsletter .container{
+    width: 1108px;
+    height: 311px;
+    background-color: #1b2026;
+    margin: 0 auto;   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.newsletter .text-content{
+    width: 46%;
+}
+.newsletter .text-content h4{
+    color: #ff8484;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.newsletter .text-content h3{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3.1rem;
+    line-height: 1.1;
+}
 
+.newsletter .form-content input[type=text]{
+    margin: 0 5px ;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    background-color: #31363b;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 324px;
+    height: 55px;
+}
+.newsletter .form-content input[type=submit]{
+    margin: 0 5px ;
+    background-color: #ff8484;
+    border-color: #ff8484;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 148px;
+    height: 55px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.newsletter .form-content input[type=submit]:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ff2d2d;
+    border-color: #ff2d2d;
+    transition: 0.5s;
+}
 .test {
     background-color: red;
     width: 100%;
