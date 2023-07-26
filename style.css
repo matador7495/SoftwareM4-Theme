@@ -91,3 +91,61 @@ header .social-media a {
     justify-content: center;
     align-items: center;
 }
+
+.banner {
+    height: 390px;
+    background-color: #1b2026;
+}
+
+.banner .container {
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.banner-text h2 {
+    color: #bbbbbb;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.banner-text h1 {
+    color: #ffffff;
+    font-size: 3.8rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.banner-btn {
+    background: white;
+    border-radius: 10px;
+    margin-left: 45%;
+}
+
+.banner-btn p {
+    padding: 1rem 2rem;
+}
+
+.banner-btn p a {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #232323;
+    font-weight: 550;
+}
+
+.banner-btn p a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width 0.2s;
+}
+
+.banner-btn p a:hover::after {
+    width: 100%;
+}
