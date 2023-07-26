@@ -149,3 +149,101 @@ header .social-media a {
 .banner-btn p a:hover::after {
     width: 100%;
 }
+
+.platforms {
+    height: 818px;
+    background-color: #efefef;
+}
+
+.platforms .container {
+    width: 1140px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 96px;
+}
+
+.platforms .app-image {
+    margin-right: 86px;
+    margin-left: 15px
+}
+
+.platforms .app-image img {
+    width: 484px;
+    border-radius: 10px;
+}
+
+.platforms .app-details {
+    margin-top: 82px;
+}
+
+.platforms .app-text h3 {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    width: min-content;
+    color: rgb(35, 35, 35);
+    margin-bottom: 1rem;
+}
+
+.platforms .app-text p {
+    color: #777777;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.platforms .features {
+    margin-left: 3px;
+}
+
+.platforms .features ul {
+    list-style: none;
+    color: #777777;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.platforms .features ul li {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.platforms .features ul li::before {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    content: "✓";
+}
+
+.platforms .learn-more {
+    margin-top: 4rem;
+}
+
+.platforms .learn-more-link {
+    color: #ffffff;
+    padding: 1.2rem 2.8rem;
+    border-radius: 4px;
+    background-color: #1b2026;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.platforms .learn-more i {
+    margin-right: 10px;
+}
+
+.platforms .learn-more-link:hover {
+    background-color: #f7d9c4;
+    color: #1b2026;
+    transition: background 1s, color 1s;
+}
