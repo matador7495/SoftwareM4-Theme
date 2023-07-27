@@ -250,7 +250,6 @@ header .social-media a {
 
 .our-features {
     background-color: #ffffff;
-    height: 738px;
     padding-top: 64px;
     padding-bottom: 96px;
 }
@@ -401,7 +400,6 @@ header .social-media a {
 }
 
 .newsletter {
-    height: 491px;
     background-color: #efefef;
     padding: 90px 0 90px 0;
 }
@@ -475,18 +473,14 @@ header .social-media a {
 }
 
 .fun-fact {
-    height: 665px;
     background-color: #ffffff;
     padding: 112px 0 80px 0;
 }
 
 .fun-fact .container {
     width: 1140px;
-    /* height: 473px; */
-    /* background-color: #1b2026; */
     margin: 0 auto;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -577,7 +571,6 @@ header .social-media a {
 }
 
 .biography {
-    height: 718px;
     background-color: #efefef;
     padding: 96px 0 48px 0;
 }
@@ -642,7 +635,6 @@ header .social-media a {
 }
 
 .about-me {
-    height: 411px;
     background-color: #efefef;
     padding: 64px 0 80px;
 }
@@ -688,7 +680,6 @@ header .social-media a {
     padding: 90px 0;
 }
 .pictures .container{
-    width: 1147px;
     margin: 0 auto;    
     display: flex;
     justify-content: center;
@@ -703,11 +694,71 @@ header .social-media a {
 .pictures .container img:nth-child(2){
     transform: scale(1.1);
 }
+.feedbacks{
+    background-color: #efefef;
+    padding: 80px 0 48px;
+}
+.feedbacks .container {
+    width: 1140px;
+    height: 672px;
+    margin: 0 auto;
+    text-align: center;
+}
+.feedbacks .container .title{
+    margin-bottom: 48px;
+}
+.feedbacks .title p{
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #777777;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    
+}
+.feedbacks .title h3{
+    font-size: 3.8rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+.feedbacks .feedback-content{
+    display: flex;    
+}
+.feedbacks .feedback {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 48px 0 32px;
+    margin: 0 16px;
+}
+.feedbacks .feedback img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.feedbacks .feedback h5{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: bold;
 
-
-
-
-
+}
+.feedbacks .feedback h6{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ff8484;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.feedbacks .feedback p{
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #777777;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0 70px;
+}
 
 .test {
     background-color: red;
