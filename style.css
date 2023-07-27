@@ -674,90 +674,147 @@ header .social-media a {
     color: #232323;
     font-weight: bold;
 }
-.pictures{
+
+.pictures {
     height: 564px;
     background-color: #ffffff;
     padding: 90px 0;
 }
-.pictures .container{
-    margin: 0 auto;    
+
+.pictures .container {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pictures .container img{
+
+.pictures .container img {
     width: 313px;
     height: 350px;
     margin: 0 32px;
     object-fit: cover;
 }
-.pictures .container img:nth-child(2){
+
+.pictures .container img:nth-child(2) {
     transform: scale(1.1);
 }
-.feedbacks{
+
+.feedbacks {
     background-color: #efefef;
-    padding: 80px 0 48px;
+    padding-top: 80px;
 }
+
 .feedbacks .container {
     width: 1140px;
     height: 672px;
     margin: 0 auto;
     text-align: center;
 }
-.feedbacks .container .title{
+
+.feedbacks .container .title {
     margin-bottom: 48px;
 }
-.feedbacks .title p{
+
+.feedbacks .title p {
     font-size: 1.1rem;
     line-height: 1.9;
     color: #777777;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    
+
 }
-.feedbacks .title h3{
+
+.feedbacks .title h3 {
     font-size: 3.8rem;
     line-height: 1.1;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    
+
 }
-.feedbacks .feedback-content{
-    display: flex;    
+
+.feedbacks .feedback-content {
+    display: flex;
 }
+
 .feedbacks .feedback {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 48px 0 32px;
     margin: 0 16px;
 }
-.feedbacks .feedback img{
+
+.feedbacks .feedback img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 2rem;
 }
-.feedbacks .feedback h5{
+
+.feedbacks .feedback h5 {
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: bold;
 
 }
-.feedbacks .feedback h6{
+
+.feedbacks .feedback h6 {
     font-size: 1rem;
     line-height: 1.5;
     color: #ff8484;
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.feedbacks .feedback p{
+
+.feedbacks .feedback p {
     font-size: 1.1rem;
     line-height: 1.9;
     color: #777777;
     font-weight: 400;
     margin-bottom: 0;
     padding: 0 70px;
+}
+
+.our-client {
+    height: 330px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-client .container {
+    width: 1108px;
+    height: 218px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.our-client .container img {
+    width: 161px;
+    height: 106px;
+    opacity: 0.7;
+    overflow: hidden;
+
+}
+
+.our-client .container img:hover {
+    animation: rotate-center 1s linear 0s 1 normal none;   
+
+}
+
+@keyframes rotate-center {
+			
+    0% {
+        transform:rotate(0);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
 
 .test {
