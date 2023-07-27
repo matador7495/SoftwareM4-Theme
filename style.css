@@ -11,7 +11,7 @@ body {
 
 header {
     position: sticky;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     min-height: 100px;
     background-color: #efefef;
@@ -593,9 +593,6 @@ header .social-media a {
 }
 
 .biography .container img {
-    display: block;
-    width: 423px;
-    height: 554px;
     transform: scale(1.1);
     border: 10px solid #ffffff;
     border-radius: 10px;
@@ -618,7 +615,7 @@ header .social-media a {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 2.5;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .biography .container .social-media i {
@@ -652,7 +649,7 @@ header .social-media a {
 
 .about-me .container {
     background-color: #dce8eb;
-    padding: 3.5rem 6.5rem;
+    padding: 48px 104px 56px;
     margin: 0 auto;
     max-width: 900px;
     border-radius: 16px;
@@ -685,6 +682,32 @@ header .social-media a {
     color: #232323;
     font-weight: bold;
 }
+.pictures{
+    height: 564px;
+    background-color: #ffffff;
+    padding: 90px 0;
+}
+.pictures .container{
+    width: 1147px;
+    margin: 0 auto;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pictures .container img{
+    width: 313px;
+    height: 350px;
+    margin: 0 32px;
+    object-fit: cover;
+}
+.pictures .container img:nth-child(2){
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 .test {
     background-color: red;
