@@ -721,7 +721,6 @@ header .social-media a {
     color: #777777;
     font-weight: bold;
     margin-bottom: 0.5rem;
-
 }
 
 .feedbacks .title h3 {
@@ -729,7 +728,6 @@ header .social-media a {
     line-height: 1.1;
     margin-bottom: 0.5rem;
     font-weight: bold;
-
 }
 
 .feedbacks .feedback-content {
@@ -755,7 +753,6 @@ header .social-media a {
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: bold;
-
 }
 
 .feedbacks .feedback h6 {
@@ -791,7 +788,6 @@ header .social-media a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .our-client .container img {
@@ -799,24 +795,84 @@ header .social-media a {
     height: 106px;
     opacity: 0.7;
     overflow: hidden;
-
 }
 
 .our-client .container img:hover {
-    animation: rotate-center 1s linear 0s 1 normal none;   
-
+    animation: rotate-center 1s linear 0s 1 normal none;
 }
 
 @keyframes rotate-center {
-			
     0% {
-        transform:rotate(0);
+        transform: rotate(0);
     }
+
     100% {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
-
+.get-newsletter {
+    height: 717px;
+    background-color: #dce8eb;
+}
+.get-newsletter img{
+    width: 952px;
+    height: 717px;
+}
+.get-newsletter .container {
+    display: flex;
+}
+.get-newsletter .text-content{
+    max-width: 550px;
+    margin: auto;
+    padding: 4rem 0;
+}
+.get-newsletter .text-content h3{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #777777;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.get-newsletter .text-content h2{
+    font-size: 3.8rem;
+    line-height: 1.1;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.get-newsletter .text-content p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #777777;
+    margin-bottom: 3rem;
+}
+.get-newsletter .text-content .mode-toggle , .supoort{
+    margin-bottom: 2rem;
+    display: flex;
+}
+.get-newsletter .text-content i{
+    background: #ffffff;
+    border-radius: 50%;
+    min-width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #14191e;
+    font-size: 2rem;
+}
+.get-newsletter .text-content h4{
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #14191e;
+    margin-bottom: 5px;
+}
+.get-newsletter .text-content h5{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #777777;
+    font-weight: 400;
+}
 .test {
     background-color: red;
     width: 100%;
