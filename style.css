@@ -812,13 +812,13 @@ header .social-media a {
 }
 
 .get-newsletter {
-    height: 717px;
     background-color: #dce8eb;
 }
 
 .get-newsletter img {
     width: 952px;
     height: 717px;
+    margin: 0;
 }
 
 .get-newsletter .container {
@@ -897,7 +897,6 @@ header .social-media a {
 
 .view-in-action .container {
     width: 1140px;
-    height: 452;
 }
 
 .view-in-action .container h4 {
@@ -911,10 +910,12 @@ header .social-media a {
     display: flex;
 }
 
-.view-in-action .media .image {
+.view-in-action .media .image,
+img {
     width: 570px;
     height: 350px;
     margin: 0 15px;
+    border-radius: 10px;
 }
 
 .view-in-action .media .image {
@@ -923,7 +924,6 @@ header .social-media a {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     background-size: cover;
     background-position: center;
 }
@@ -941,6 +941,11 @@ header .social-media a {
     align-items: center;
     font-size: 1.4rem;
     color: #121212;
+}
+
+.maps iframe {
+    width: 100%;
+    height: 480px;
 }
 
 .test {
