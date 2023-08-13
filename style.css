@@ -157,7 +157,7 @@ header .social-media a {
     width: 100%;
 }
 
-.platforms {    
+.platforms {
     background-color: #efefef;
 }
 
@@ -334,10 +334,6 @@ header .social-media a {
     font-size: 1.1rem;
     line-height: 1.5;
     opacity: 0;
-}
-
-.our-features .card {
-  
 }
 
 .our-features .card::before {
@@ -524,7 +520,7 @@ header .social-media a {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 2rem;
-    width: 85%;
+    width: 90%;
 }
 
 .fun-fact .symbols {
@@ -925,7 +921,6 @@ header .social-media a {
     align-items: center;
     background-size: cover;
     background-position: center;
-    
 }
 
 .view-in-action .media i {
@@ -1002,7 +997,7 @@ footer .main-links .rows li {
     margin-bottom: 0.6rem;
 }
 
-footer .main-links .rows li a::after {
+/* footer .main-links .rows li a::after {
     content: '';
     display: block;
     width: 0;
@@ -1010,9 +1005,30 @@ footer .main-links .rows li a::after {
     background: #ffffff;
     transition: width 0.2s;
 }
-
 footer .main-links .rows li a:hover::after {
     width: 100%;
+} */
+footer .main-links .rows li a {
+    display: inline-block;
+    position: relative;
+}
+
+footer .main-links .rows li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom left;
+    transition: transform 0.1s ease-out;
+}
+
+footer .main-links .rows li a:hover:after {
+    transform: scaleX(1);
+    /* transform-origin: bottom right; */
 }
 
 footer .get-in-touch {
@@ -1057,17 +1073,25 @@ footer .get-in-touch .button:hover {
     transition: all 0.3s ease-in;
 }
 
+footer .get-in-touch .rows li a {
+    position: relative;
+}
+
 footer .get-in-touch .rows li a::after {
     content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: #ffffff;
-    transition: width 0.2s;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom left;
+    transition: transform 0.1s ease-out;
 }
 
 footer .get-in-touch .rows li:nth-child(odd) a:hover::after {
-    width: 100%;
+    transform: scaleX(1);
 }
 
 footer .get-in-touch .rows li:nth-child(even) a {
@@ -1128,7 +1152,7 @@ footer .social-media i:hover {
     }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 600px) {
 
     .nav-bar,
     header .social-media {
@@ -1164,18 +1188,8 @@ footer .social-media i:hover {
         font-size: 1.05rem;
     }
 
-    .banner .banner-btn {
-        /* width: 42%; */
-        /* height: 55px; */
-        /* margin: 0; */
-    }
-
     .banner .banner-btn a {
         font-size: 1rem;
-    }
-
-    .platforms {
-        /* height: 1128px; */
     }
 
     .platforms .container {
@@ -1190,10 +1204,6 @@ footer .social-media i:hover {
     .platforms .app-image {
         padding: 0 15px;
         margin: 0;
-    }
-
-    .platforms .app-image img {
-        /* width: 100%; */
     }
 
     .platforms .app-text h3 {
@@ -1299,11 +1309,12 @@ footer .social-media i:hover {
 
     .newsletter .form-content {
         margin: 0 15px;
+        width: 90%;
     }
 
     .newsletter .form-content input[type=text] {
-        /* width: 100%; */
-        width: 310px;
+        width: 100%;
+        /* width: 310px; */
         margin: 0;
     }
 
@@ -1321,8 +1332,8 @@ footer .social-media i:hover {
 
     .fun-fact .container img {
         /* display: block; */
-        /* width: 92%; */
-        height: 336px;
+        width: 92%;
+        height: auto;
         margin: 0 auto 2rem;
     }
 
@@ -1372,7 +1383,7 @@ footer .social-media i:hover {
 
     .biography .container img {
         /* width: 100%; */
-        height: 435px;
+        height: auto;
         margin-bottom: 2rem;
         transform: scale(1);
     }
@@ -1413,7 +1424,7 @@ footer .social-media i:hover {
 
     .pictures .container img {
         width: 90%;
-        height: 250px;
+        height: 350px;
         margin: 15px 0;
         transform: none !important;
     }
@@ -1423,8 +1434,13 @@ footer .social-media i:hover {
         height: fit-content;
     }
 
+    .feedbacks .container .title {
+        width: 60%;
+        margin: 0 auto 48px;
+    }
+
     .feedbacks .title h3 {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
     }
 
     .feedbacks .feedback-content {
@@ -1485,6 +1501,11 @@ footer .social-media i:hover {
     .get-newsletter .text-content p {
         font-size: 1rem;
         padding: 0 35px;
+    }
+
+    .get-newsletter .text-content h5 {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .get-newsletter .text-content .mode-toggle,
@@ -1565,10 +1586,6 @@ footer .social-media i:hover {
         margin: 0;
     }
 
-    footer .rows ul a {
-        /* max-width: none; */
-    }
-
     footer .get-in-touch .button {
         margin: 0 auto;
     }
@@ -1586,5 +1603,108 @@ footer .social-media i:hover {
         /* display: flex; */
         justify-content: center;
         margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 539px) {
+
+    header .logo-title {
+        font-size: 1.4rem;
+    }
+    .banner .banner-text h1 {
+        font-size: 2.9rem;
+    }
+    .platforms .app-text h3 {
+        font-size: 2.5rem;
+    }
+    .platforms .app-text p {
+        font-size: 1.1rem;
+    }
+    .our-features .container h3 {
+        font-size: 2.8rem;
+    }
+    .our-features .card strong {
+        font-size: 1.4rem;
+    }
+    .newsletter .text-content h3 {
+        font-size: 2.5rem;
+    }
+    .fun-fact .container img {
+        width: 95%;
+    }
+    .fun-fact .text-content h2 {
+        font-size: 3rem;
+    }
+    .fun-fact .symbol-up strong, .fun-fact .symbol-down strong {
+        font-size: 2.5rem;
+    }
+    .biography .container {
+        width: 95%;
+    }
+    .about-me .container {
+        width: 95%;
+    }
+    .pictures .container img {
+        width: 95%;
+        height: 250px;
+    }
+    .feedbacks .container .title {
+        width: 100%;
+    }
+    .feedbacks .title h3 {
+        font-size: 2.9rem;
+    }
+    .our-client .container img {
+        width: 55%;
+    }
+    .get-newsletter .text-content h2 {
+        font-size: 2.9rem;
+    }
+    .get-newsletter .text-content h5 {
+        width: 100%;
+    }
+    .view-in-action .media .image, .view-in-action .media img {
+        width: 95%;
+    }
+    footer .container h5 {
+        font-size: 1.5rem;
+    }
+    footer .about p {
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 575px){
+    .platforms .app-image {
+        padding: 0 30px;
+    }
+    .our-features .cards {
+        padding: 0px 30px;
+    }
+    .newsletter .text-content {
+        width: 75%;
+    }
+    .fun-fact .container img {
+        width: 88%;
+    }
+    .biography .container {
+        width: 88%;
+    }
+    .about-me .container {
+        width: 88%;
+    }
+    .pictures .container img {
+        height: 350px;
+    }
+    .feedbacks .container {
+        width: 95%;
+    }
+    .our-client .container {
+        width: 95%;
+    }
+    .view-in-action .container {
+        width: 95%;
+    }
+    footer .about p {
+        width: 85%;
     }
 }
